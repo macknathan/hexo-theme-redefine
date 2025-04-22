@@ -36,7 +36,6 @@ module.exports = {
         xxlarge: "48px",
       },
       fontFamily: {
-        // chinese: ["Noto Sans SC", "sans-serif"],
         english: ["Geist Variable", "sans-serif"],
         default: ["Geist Variable", "system-ui", "sans-serif"],
       },
@@ -130,6 +129,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "author-border": "transparent", // Ensure the border color is transparent
       },
       boxShadow: {
         redefine:
@@ -140,6 +140,9 @@ module.exports = {
           "0px 1px 4px 0px var(--shadow-color-2), 0px 0px 0px 1px var(--shadow-color-1)",
         "redefine-flat-hover":
           "0px 1px 4px 0px var(--shadow-color-2), 0px 0px 0px 1px var(--shadow-color-1), 0px 0px 0px 1px inset var(--shadow-color-1)",
+      },
+      borderWidth: {
+        author: "0px", // Remove any border width for the author label
       },
     },
   },

@@ -144,7 +144,7 @@ export default function initUtils() {
         location.pathname === config.root
       ) {
         const scrollY = window.scrollY || window.pageYOffset;
-        const blurValue = scrollY >= this.triggerViewHeight ? 15 : 0;
+        const blurValue = scrollY >= this.triggerViewHeight ? 25 : scrollY / 10; // Increased blur effect
 
         try {
           requestAnimationFrame(() => {
@@ -152,7 +152,6 @@ export default function initUtils() {
             this.homeBannerBackground_dom.style.webkitFilter = `blur(${blurValue}px)`;
           });
         } catch (e) {
-          // Handle or log the error properly
           console.error("Error updating banner blur:", e);
         }
       }
