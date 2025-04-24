@@ -1,39 +1,39 @@
 <div class="side-tools-container">
 	<ul class="hidden-tools-list">
 		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
-			<i class="fa-regular fa-magnifying-glass-plus"></i>
+			<i class="fa-solid fa-magnifying-glass-plus"></i>
 		</li>
 
 		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
-			<i class="fa-regular fa-magnifying-glass-minus"></i>
+			<i class="fa-solid fa-magnifying-glass-minus"></i>
 		</li>
 
 		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
-			<i class="fa-regular fa-moon"></i>
+			<i class="fa-solid fa-moon"></i>
 		</li>
 
 		<% if (theme.plugins.feed.enable && config.feed) { %>
 		<li class="right-bottom-tools rss flex justify-center items-center">
 			<a class="flex justify-center items-center" href="<%= '/' + config.feed.path %>" target="_blank">
-				<i class="fa-regular fa-rss"></i>
+				<i class="fa-solid fa-sun"></i>
 			</a>
 		</li>
 		<% } %>
 
 		<% if (theme.global.scroll_progress.percentage !== true) { %>
 		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
-			<i class="fa-regular fa-arrow-up"></i>
+			<i class="fa-solid fa-arrow-up"></i>
 		</li>
 		<% } %>
 
 		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
-			<i class="fa-regular fa-arrow-down"></i>
+			<i class="fa-solid fa-arrow-down"></i>
 		</li>
 	</ul>
 
 	<ul class="visible-tools-list">
 		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
-			<i class="fa-regular fa-gear fa-spin"></i>
+			<i class="fa-solid fa-gear fa-spin"></i>
 		</li>
 		<% if (theme.global.scroll_progress.percentage === true) { %>
 		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">

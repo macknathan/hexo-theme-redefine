@@ -59,7 +59,7 @@ export const ModeToggle = {
     document.documentElement.classList.remove("dark");
     document.body.classList.add("light-mode");
     document.documentElement.classList.add("light");
-    this.iconDom.className = "fa-regular fa-moon";
+    this.iconDom.className = "fa-solid fa-moon";
     main.styleStatus.isDark = false;
     main.setStyleStatus();
     this.mermaidInit(this.mermaidLightTheme);
@@ -71,7 +71,7 @@ export const ModeToggle = {
     document.documentElement.classList.remove("light");
     document.body.classList.add("dark-mode");
     document.documentElement.classList.add("dark");
-    this.iconDom.className = "fa-regular fa-brightness";
+    this.iconDom.className = "fa-solid fa-sun";
     main.styleStatus.isDark = true;
     main.setStyleStatus();
     this.mermaidInit(this.mermaidDarkTheme);
