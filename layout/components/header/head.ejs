@@ -9,7 +9,8 @@
     <!-- preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="<%= url_for('fontawesome/css/all.min.css') %>">
+   
     <% if (theme.cdn.enable) { %>
         <% const provider = theme.cdn.provider; %>
         <% const cdnLinks = {
@@ -137,22 +138,5 @@
 
     <%- export_config() %>
     
-    <!--- Fontawesome Part-->
-    <%- renderCSS('fontawesome/fontawesome.min.css') %>
-    <%- renderCSS('fontawesome/brands.min.css') %>
-    <%- renderCSS('fontawesome/solid.min.css') %>
-    <%- renderCSS('fontawesome/regular.min.css') %>
-    <% if (theme.fontawesome.thin == true) { %>
-        <%- renderCSS('fontawesome/thin.min.css') %>
-    <% } %>
-    <% if (theme.fontawesome.light == true) { %>
-        <%- renderCSS('fontawesome/light.min.css') %>
-    <% } %>
-    <% if (theme.fontawesome.duotone == true) { %>
-        <%- renderCSS('fontawesome/duotone.min.css') %>
-    <% } %>
-    <% if (theme.fontawesome.sharp_solid == true) { %>
-        <%- renderCSS('fontawesome/sharp-solid.min.css') %>
-    <% } %>
 </head>
 

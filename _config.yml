@@ -113,6 +113,8 @@ fontawesome: # Pro v6.2.1
   duotone: false
   # Sharp Solid version
   sharp_solid: false
+static_dirs:
+  - source/fontawesome # FontAwesome static files
 # FONTAWESOME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 

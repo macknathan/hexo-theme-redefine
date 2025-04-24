@@ -12,7 +12,6 @@
 			<i class="fa-regular fa-moon"></i>
 		</li>
 
-		<!-- rss -->
 		<% if (theme.plugins.feed.enable && config.feed) { %>
 		<li class="right-bottom-tools rss flex justify-center items-center">
 			<a class="flex justify-center items-center" href="<%= '/' + config.feed.path %>" target="_blank">
@@ -34,7 +33,7 @@
 
 	<ul class="visible-tools-list">
 		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
-			<i class="fa-regular fa-cog fa-spin"></i>
+			<i class="fa-regular fa-gear fa-spin"></i>
 		</li>
 		<% if (theme.global.scroll_progress.percentage === true) { %>
 		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">

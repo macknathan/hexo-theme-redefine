@@ -165,7 +165,9 @@ export default function initUtils() {
         "right-side-tools-container",
       );
       const aplayer = document.getElementById("aplayer");
-
+      for (let i = 0; i < toolList.length; i++) {
+        toolList[i].style.display = "none";
+      }
       for (let i = 0; i < toolList.length; i++) {
         const tools = toolList[i];
         if (y <= 100) {
